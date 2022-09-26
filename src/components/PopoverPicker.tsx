@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const PopoverPicker = ({ color, onChange }: Props) => {
-  const popover = useRef();
+  const popover = useRef<HTMLDivElement>(null);
   const [isOpen, toggle] = useState(false);
 
   const close = useCallback(() => toggle(false), []);
@@ -22,7 +22,7 @@ export const PopoverPicker = ({ color, onChange }: Props) => {
           onClick={() => toggle(true)}
           className="cursor-pointer border-white border-2 h-12 w-12 rounded-full shadow"
           style={{
-            backgroundColor: color
+            backgroundColor: color,
           }}
         />
       </div>
