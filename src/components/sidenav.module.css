@@ -1,0 +1,23 @@
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(10, 25, 41);
+  transition: width 0.3s ease-in-out;
+}
+
+.sidenavClosed {
+  composes: sidenav;
+  width: 60px;
+  transition: width 0.3s ease-in-out;
+}
+
+.menuBtn {
+  align-self: center;
+  align-self: flex-start;
+  justify-self: flex-end;
+  color: #b2bac2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
